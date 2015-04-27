@@ -15,7 +15,7 @@ import (
 )
 
 const (
-	DefaultBaseUrl    = "core.windows.net"
+	DefaultBaseUrl    = "core.chinacloudapp.cn"
 	DefaultApiVersion = "2014-02-14"
 	defaultUseHttps   = true
 
