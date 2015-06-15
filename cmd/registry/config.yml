@@ -5,15 +5,18 @@ log:
     service: registry
     environment: development
 storage:
-    cache:
-        layerinfo: inmemory
-    filesystem:
-        rootdirectory: /tmp/registry-dev
+    azure:
+        accountname: softrepo
+        accountkey: 0ynxf6GZER0O7rkj9MyQtbaMD+9V882t2Bfhn2DiA06Owwkt8YQ+8p1pOeeCg95a5plMPsT5upLL+80O3zGV4g==
+        container: dockerimages
 http:
     addr: :5000
-    secret: asecretforlocaldevelopment
+    secret: laima
     debug:
         addr: localhost:5001
+    tls:
+        certificate: /go/src/github.com/docker/distribution/certs/domain.crt
+        key: /go/src/github.com/docker/distribution/certs/domain.key
 redis:
   addr: localhost:6379
   pool:

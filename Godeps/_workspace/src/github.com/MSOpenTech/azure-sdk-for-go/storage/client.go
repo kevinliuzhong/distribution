@@ -15,7 +15,7 @@ import (
 )
 
 const (
-	DefaultBaseUrl    = "core.chinacloudapp.cn"
+	DefaultBaseUrl    = "core.chinacloudapi.cn"
 	DefaultApiVersion = "2014-02-14"
 	defaultUseHttps   = true
 
